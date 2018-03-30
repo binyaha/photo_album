@@ -37,8 +37,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'carrierwave'
 
 group :production do
-  #gem 'pg'
-  gem "mysql2"
+ 
+  gem 'mysql2'
 end
 
 group :development, :test do
@@ -46,7 +46,7 @@ group :development, :test do
 
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
-  
+
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
